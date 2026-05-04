@@ -17,7 +17,7 @@ function Discover() {
     setResults([]);
 
     try {
-      const response = await axios.post('http://side-hustler.onrender.com/api/get-hustles', formData);
+      const response = await axios.post('https://side-hustler.onrender.com/api/get-hustles', formData);
       setResults(response.data.suggestions);
     } catch (err) {
       console.error(err);
