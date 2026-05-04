@@ -68,6 +68,10 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+app.get('/test', (req, res) => {
+  res.send("Backend working ✅");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
