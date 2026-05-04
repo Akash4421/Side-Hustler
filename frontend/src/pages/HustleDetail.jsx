@@ -41,7 +41,7 @@ const HustleDetail = () => {
 
     const fetchDetails = async () => {
       try {
-        const response = await axios.post('http://localhost:5000/api/get-hustle-details', {
+        const response = await axios.post('http://side-hustler.onrender.com/api/get-hustle-details', {
           title: hustle.title,
           description: hustle.description
         });

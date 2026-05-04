@@ -33,7 +33,7 @@ const Chatbot = () => {
       // Prepare history (excluding the very first generic greeting to save tokens if we want, but let's send it all for context)
       const history = messages.map(msg => ({ sender: msg.sender, text: msg.text }));
 
-      const response = await axios.post('http://localhost:5000/api/chat', {
+      const response = await axios.post('http://side-hustler.onrender.com/api/chat', {
         message: userMessage.text,
         history: history
       });
